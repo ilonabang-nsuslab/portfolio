@@ -1,0 +1,304 @@
+body {
+    font-family: "NanumSquare";
+/*    overflow: hidden;*/
+    background-color: #f5f5f5;
+}
+
+.centerWrap{
+    width:904px;
+    margin:0 auto;
+    padding-left:40px;
+}
+/* header */
+
+header {
+    background: url(../images/logoBg.png) no-repeat;
+    z-index: 10000;
+/*    border-bottom:none;*/
+}
+.hamBtn,
+.mo_login,
+.mo_call,
+.mo_text,
+.mo_isText,
+.mo_dsText,
+mo_dsTextBt,
+.isText .mo_isTextBt{
+    display:none;
+}
+
+/* container */
+
+/* banner 1 */
+.bannerBg{
+    width:100%;
+    height:651px;
+    background: url(../images/bannerBg01.jpg) no-repeat center 0 fixed #000;
+    position:absolute;
+    top:0;
+/*    background-size:100%;*/
+}
+.banner{
+    height:538px;
+    position: relative;
+}
+.banner>span{
+    font-family: 'Nanum Myeongjo', serif;
+    color:#f5f5f5;
+    text-shadow: 1px 1px 3px #000;
+    position:absolute;
+    left:50%;
+    transform: translateX(-50%);
+}
+.banner>span:first-of-type{
+    font-size:35px;
+    bottom:290px;
+}
+.banner>span:last-of-type{
+    font-size:20px;
+    bottom: 226px;
+}
+.banner>span:first-of-type:after{
+    content:"";
+    display:block;
+    width:70px;
+    height:2px;
+    background-color:#f5f5f5;
+    margin-top:20px;
+    margin-left:50px;
+}
+.banner>img{
+    position: absolute;
+    bottom:64px;
+    left:50%;
+    margin-left:5px;
+}
+.scroll {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+.scroll i {
+    display: block;
+    width: 32px;
+    height: 33px;
+    margin: 0 auto 10px;
+    animation: scroll 0.5s infinite;
+    background: url(../images/scroll_01.png);
+}
+@keyframes scroll {
+    0% {
+        background: url(../images/scroll_02.png);
+    }
+
+    90% {
+        background: url(../images/scroll_01.png);
+    }
+
+}
+/* banner 2 */
+.title{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: 'Nanum Myeongjo', serif;
+    color:#000;
+}
+.title:after{
+    content:"";
+    display:block;
+    width:70px;
+    height:2px;
+    background-color:#000;
+    margin-top:30px;
+}
+.bsText{
+    position: relative;
+    height:373px;
+    margin:110px 8px;
+}
+.bsText p{
+    margin-bottom: 60px;
+}
+.bsText p:first-of-type{
+    margin-top:25px;
+}
+.bsText p>span{
+    display: block;
+    font-size: 14px;
+    color:#000;
+}
+.bsText img{
+    position: absolute;
+    right:0;
+}
+
+/* banner 3 */
+.banner2{
+    width:100%;
+    height:653px;
+    background: url(../images/bannerBg03.jpg) 80% 90% fixed #121d20;
+/*    background-size: 100%;*/
+}
+.brandType{
+    height:480px;
+    position: relative;
+}
+.brandType .text span{
+    display: block;
+    color:#000;
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    font-family: 'Nanum Myeongjo', serif;
+}
+.brandType .text span:first-of-type{
+    font-size: 15px;
+    top:124px;
+}
+.brandType .text span:nth-of-type(2){
+    font-size: 30px;
+    text-transform: uppercase;
+    top:153px;
+}
+.brandType .text span:last-of-type{
+    font-size: 25px;
+    top:195px;
+}
+.button>li{
+    float:left;
+    position: absolute;
+    width:433px;
+    height:63px;
+    line-height: 63px;
+    background-image: url(../images/bannerBtn01.png);
+    background-position: center center;
+    background-size: cover;
+    bottom:107px;
+}
+.button>li:first-child{
+    margin-left:90px;
+}
+.button>li:last-child{
+    margin-left:727px;
+}
+.button>li>a{
+    display:block;
+    color:#fff;
+    font-size: 25px;
+    font-family: 'Nanum Myeongjo', serif;
+}
+.button>li span{
+    position: absolute;
+    left:50%;
+    margin-left:-40px;
+}
+
+/* banner 4 */
+
+/* span은 block일 경우 text-align으로 위치값 조정*/
+
+.isolStory{
+    width:100%;
+    height:653px;
+    background: url(../images/bannerBg04.jpg) center center no-repeat #0d1213;
+/*    background-size:100%;*/
+}
+.isText{
+    position: relative;
+/*    height:373px;*/
+    margin:0px 8px;
+    color:#f5f5f5;
+    padding-top:97px;
+/*    background: red;*/
+}
+.isText .title{
+    display: block;
+    color:#f5f5f5;
+    margin-top:107px;
+}
+.isText .title:after{
+    background-color:#f5f5f5;
+/*    text-align: right;*/
+    position: absolute;
+    right: 0;
+}
+.boldText span{
+    display: block;
+    font-size:15px;
+    font-weight: bold;
+}
+.isText p:first-of-type{
+/*    margin-top:50px;*/
+}
+.isText .boldText span:last-child{
+    margin-left:60px;
+    margin-bottom: 46px;
+}
+.isText .boldText span{
+    margin-bottom: 7px;
+}
+.isText .normalText span{
+    margin-bottom: 10px;
+}
+.normalText span{
+    display: block;
+    font-size:13px;
+}
+.isText span,
+.isText img:last-of-type{
+    text-align:right;
+}
+.isText img:last-of-type{
+    margin:50px 0 0 230px;
+}
+.isText img:first-of-type{
+    float:left;
+}
+
+/* banner 5 */
+
+.dunaStory{
+    height:655px;
+    position: relative;
+}
+.dunaStory>img{
+    float:right;
+}
+.dsText{
+    float:left;
+    position: absolute;
+    top:0;
+    width:825px;
+    height:655px;
+    text-align: center;
+    padding-top: 177px;
+    box-sizing: border-box;
+}
+.dsText .title:after{
+    margin-left:370px;
+    margin-bottom: 53px;
+}
+.dsText img{
+    position: absolute;
+    top:0;
+}
+.dsText .boldText span:last-of-type{
+    margin-bottom: 50px;
+}
+.dsText img:first-of-type{
+    top:269px;
+    left:220px;
+}
+.dsText img:last-of-type{
+    top:272px;
+    right:220px;
+}
+.dsText .boldText span{
+    margin-bottom: 7px;
+}
+.dsText .normalText span{
+    margin-bottom: 10px;
+}
+

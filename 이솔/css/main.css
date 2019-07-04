@@ -1,0 +1,385 @@
+body {
+    font-family: "NanumSquare";
+/*    overflow: hidden;*/
+}
+
+
+
+/* visual */
+
+#visual {
+    position: relative;
+    height: 772px;
+    min-width:1260px;
+}
+
+#visual input {
+    display: none;
+}
+.banner>li{
+    position: absolute;
+    width:100%;
+    height:100%;
+    opacity:0;
+    transition:1s;
+    text-indent: -99999px;
+}
+.banner>li>a{
+    display:block;
+    width: 100%;
+    height: 100%;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center 0;
+}
+/* background-image 속성에다 주어야함 전체속성으로 사진을 넣어주면 공통사항에 background 다른 속성을 쓸수가 없음 */
+.banner li:first-child a{
+    background-image: url(../images/banner_01.jpg);
+}
+
+.banner li:nth-child(2) a{
+    background-image: url(../images/banner_02.jpg);
+}
+
+#visual label {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    z-index: 100;
+}
+
+#visual label:first-of-type {
+    margin-left: -20px;
+}
+
+#btn1:checked ~ label:first-of-type,
+#btn2:checked ~ label:nth-of-type(2) {
+    background-color: #000;
+}
+
+#btn1:checked ~ .banner > li:first-child,
+#btn2:checked ~ .banner > li:last-child {
+    opacity: 1;
+}
+
+/* weekly seller */
+.weeklySeller .title {
+    text-align: center;
+    padding-top: 45px;
+}
+.weeklyWrap{height:277px;}
+.productWrap{width:90%; height:100%;
+    overflow: hidden;
+    margin: 0 auto;
+/*    background-color: antiquewhite;*/
+}
+.weeklySeller .product1 {
+    width: 500%;
+    height: 100%;
+    padding-left: 25px;
+/*    margin-left: -220px;*/
+/*    background-color: aqua;*/
+}
+
+.weeklySeller .product1 > li {
+    float: left;
+    /* li에 이미지와 같은 너비값을 준 후 마진을 주어야 밑에 글자가 정확하게 배열이 됨 */
+    width: 220px;
+    height: auto;
+    margin-top: 20px;
+/*        background:blue;*/
+    text-align: center;
+    position: relative;
+}
+
+/*
+.weeklySeller .product1>li:hover{
+    width:174px;
+    height:250px;
+    border:1px solid rgba(0,0,0,0.5);
+}
+*/
+
+.weeklySeller .product1 strong,
+.weeklySeller .product1 span {
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: -1px;
+    line-height: 1.5;
+}
+
+.menuArrow > li {
+    position: absolute;
+    top: 50%;
+}
+
+.leftArrow {
+    left: 80px;
+}
+
+.rightArrow {
+    right: 80px;
+}
+
+/* product2 */
+.product2 {}
+
+.reviewEvent {
+    width: 606px;
+    height: 617px;
+    background: url(../images/reviewEvent_cover.jpg) no-repeat center 0;
+    text-align: center;
+    float: left;
+}
+
+.reviewEvent > .text {
+    display: block;
+}
+
+.reviewEvent strong {
+    font-size: 50px;
+    padding-top: 240px;
+}
+
+.reviewEvent span {
+    font-size: 30px;
+}
+
+.reviewEvent .more {
+    margin-top: 25px;
+}
+
+.reviewEvent a {
+    width: 164px;
+    height: 46px;
+    font-size: 20px;
+    color: #000;
+    border: 2px solid #000;
+    border-radius: 20px;
+    padding: 5px 30px;
+    background: #dcdcdc;
+}
+.reviewEvent a:hover{
+    background:#222;
+    color:#fff;
+}
+/* 한 파트에서 겹치는 부분이 있으면 우선적으로 float:left와 float:right를 주어서 위치를 잡아주는게 옳은 방식 */
+.right {
+    float: right;
+}
+.right > .productT {
+    width: 617px;
+    height: 289px;
+    background: url(../images/ageSupremeAmple_cover.jpg);
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+}
+
+.productT img {
+    position: absolute;
+    top: 40px;
+    left: 128px;
+}
+
+.productT span,
+.productT .title {
+    display: block;
+    margin-left: 150px;
+    line-height: 1.5;
+    color: #000;
+}
+
+.productT .title {
+    font-size: 30px;
+}
+
+.productT .en {
+    font-size: 20px;
+    margin-top: 73px;
+}
+
+.productT .tag {
+    font-size: 16px;
+}
+
+.productT span:nth-of-type(2) {
+    margin-top: 50px;
+}
+
+.productT a:hover:after {
+    content: "";
+    display: block;
+    width: 617px;
+    height: 289px;
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.productB {
+    position: relative;
+    overflow: hidden;
+    width: 616px;
+    top: 309px;
+    text-align: center;
+}
+.productB ul>li{
+    float: left;
+    width: 308px;
+    height: 309px;
+    position:relative;
+}
+.productB ul > li >a {
+    display:block;
+    height:100%;
+}
+
+.productB .leftPb>a{
+    background-color:#acb9a5;
+/*    margin-right: 308px;*/
+}
+
+.productB .rightPb>a{
+    background: url(../images/duo_cover_02.jpg);
+}
+.productB .leftPb>a:hover:after,
+.productB .rightPb>a:hover:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.productB img {
+    margin-top:10px;
+
+}
+
+.productB strong,
+.productB span {
+    color: #000;
+}
+
+.productB strong {
+    display: block;
+    font-size: 22px;
+    padding-top: 25px;
+}
+
+.productB span {
+    position: absolute;
+    bottom: 15px;
+    left: 30px;
+    font-size: 15px;
+}
+
+.productB span:nth-of-type(2) {
+    left: 185px;
+}
+
+.productB .left {
+    color: #ddd;
+}
+
+.productB .right {
+    color: #acb9a5;
+}
+
+.productB:before {
+    content: "";
+    display: block;
+    width: 102px;
+    height: 22px;
+    background: #fff;
+    position: absolute;
+    left: 255px;
+    top: 140px;
+    z-index: 100;
+}
+
+.productB:after {
+    content: "";
+    display: block;
+    width: 22px;
+    height: 102px;
+    background: #fff;
+    position: absolute;
+    left: 295px;
+    top: 100px;
+    z-index: 100;
+}
+
+
+
+/* bestReview */
+.bestReview{
+    background-color:#f5f5f5;
+    height:400px;
+    margin:65px 0;
+}
+.bestReview .title {
+    text-align: center;
+    padding-top: 45px;
+}
+
+.bestReview .center>div {
+    width: 219px;
+/*    height: 236px;*/
+/*    background-color:bisque;*/
+    float:left;
+    margin:0 90px;
+    position: relative;
+    top:50px;
+}
+.bestReview strong{
+    display:block;
+    font-size:35px;
+    font-weight:bold;
+    margin:15px 0 0 28px;
+}
+.bestReview span{
+    display:block;
+    font-size:14px;
+    text-align: center;
+    margin:40px 0 0 -90px;
+}
+.bestReview .no1>span{
+    margin-top:55px;
+}
+.bestReview div>a{
+    display:block;
+/*    height:235px;*/
+/*    background: green;*/
+}
+.bestReview div>a>img{
+    position:absolute;
+    right:-35px;
+}
+.bestReview .more>a{
+    display:block;
+    font-size:13px;
+    width:100px;
+    height:30px;
+    border:2px solid #333;
+    border-radius:20px;
+    text-align: center;
+    line-height:30px;
+    color:#333;
+    margin:30px 0 0 10px; 
+}
+.bestReview .more>a:hover{
+    background:#222;
+    color:#fff;
+}

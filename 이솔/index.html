@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1">
+    <meta name="format-detection" content="telephone=no">
+    <title>방현경-이솔</title>
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo:400,700&amp;subset=korean" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/nanumsquare.css">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/icon.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/respond.css">
+    <link rel="stylesheet" href="css/respond_main.css">
+    <script src="js/jquery-3.4.0.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/respond.js"></script>
+</head>
+
+<body>
+    <header class="clearFix">
+        <div class="center clearFix">
+            <div class="hamBtn"><a href="#"><img src="images/drop-down-arrow.svg" alt="hamBtn"></a></div>
+            <h1 class="logo"><a href="index.html"><img src="images/2sol_logo.png" alt="2sol logo"></a></h1>
+            <div class="mo_cart"><a href="#"><img src="images/iconmonstr-shopping-cart-thin.svg" alt="cart"></a></div>
+            <div class="mo_search"><a href="#"><img src="images/iconmonstr-search-thin.svg" alt="search"></a></div>
+
+            <div class="gnb">
+                <ul class="gnbLeft">
+                    <li><a href="sub.html">로그인</a></li>
+                    <li><a href="sub.html">회원가입</a></li>
+                    <li><a href="#">마이페이지</a></li>
+                    <li><a href="#">장바구니</a></li>
+                    <li><a href="#">선물쿠폰입력</a></li>
+                </ul>
+                <div class="gnbRight">
+                    <form name="search" class="search">
+                        <input type="text" class="search">
+                        <a href="#"><img src="images/iconmonstr-magnifier-1.svg" alt="zoom"></a>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- nav의 sub를 100%로 주기 위해서는 center밖으로 나와야 하며 내용은 안에 따로 center를 주어야 함 -->
+        <nav>
+            <ul id="nav" class="center">
+                <li>
+                    <a href="#">product</a>
+                </li>
+                <li>
+                    <a href="brandStory.html">brand</a>
+                    <ul class="sub">
+                        <li><a href="brandStory.html">브랜드 스토리</a></li>
+                        <li><a href="brandStory.html">이솔이야기</a></li>
+                        <li><a href="brandStory.html">두나이야기</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">channel</a>
+                    <ul class="sub">
+                        <li><a href="#">행사신청</a></li>
+                        <li><a href="#">활동이야기</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">review</a>
+                    <ul class="sub">
+                        <li><a href="#">일반후기</a></li>
+                        <li><a href="#">포토후기</a></li>
+                        <li><a href="#">베스트 후기</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">event</a>
+                    <ul class="sub">
+                        <li><a href="#">진행 중인 이벤트</a></li>
+                        <li><a href="#">종료된 이벤트</a></li>
+                        <li><a href="#">테스터 모집</a></li>
+                        <li><a href="#">테스터 후기</a></li>
+                        <li><a href="#">선물하기 가이드</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">cs center</a>
+                    <ul class="sub">
+                        <li><a href="#">공지</a></li>
+                        <li><a href="#">이솔 소식</a></li>
+                        <li><a href="#">제품 상담</a></li>
+                        <li><a href="#">주문/배송 상담</a></li>
+                        <li><a href="#">교환/환불 신청</a></li>
+                        <li><a href="#">자주하는 질문</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="mo_call">
+            <li><a href="tel=070-7773-9224">교환&middot;환불문의<br>070-7773-9224</a></li>
+            <li><a href="tel=070-7763-9224">배송&middot;입금문의<br>070-7763-9224</a></li>
+            <li><span>평일10:00 - 18:00(점심 12:00-13:00)</span></li>
+        </ul>
+        </nav>
+        <div class="mo_login"><a href="sub.html"><img src="images/iconmonstr-user-male-thin.svg" alt="login">LOGIN</a></div>
+        <div class="navClose"></div>
+    </header>
+    <section id="container">
+        <h2 class="blind">배너, 위클리셀러, 제품소개, 이벤트, 베스트리뷰</h2>
+        <section id="visual" class="clearFix">
+            <h3 class="blind">배너</h3>
+            <input type="radio" id="btn1" name="button" checked>
+            <input type="radio" id="btn2" name="button">
+            <label for="btn1"></label>
+            <label for="btn2"></label>
+            <ul class="banner">
+                <!-- 1260px이 넘는 이미지는 마크업에 넣지않고 css에 넣어주어야 해상도가 낮은 화면에서도 잘보임 -->
+                <li><a href="#">banner1</a></li>
+                <li><a href="#">banner2</a></li>
+            </ul>
+        </section>
+        <section class="contents">
+            <h3 class="blind">위클리셀러, 제품소개, 이벤트, 베스트리뷰</h3>
+            <section class="weeklySeller center clearFix">
+                <h4 class="title"><img src="images/weekly_seller_title.png" alt="weekly seller"></h4>
+                <div class="weeklyWrap">
+                   <div class="productWrap">
+                    <ul class="product1">
+                        <li>
+                            <a href="#"><img src="images/product_01.jpg" alt="장벽 슈크리미 클렌징 폼 150g 8,900원"></a>
+                            <span>장벽 슈크리미 클렌징 폼 150g</span>
+                            <strong>8,900원</strong>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/product_02.jpg" alt="수 오 세럼 30ml 12,900원"></a>
+                            <span>수 오 세럼 30ml</span>
+                            <strong>12,900원</strong>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/product_03.jpg" alt="홍결고 크림 50g 14,900원"></a>
+                            <span>홍결고 크림 50g</span>
+                            <strong>14,900원</strong>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/product_04.jpg" alt="더 앰플 플러스 30ml 25,900원"></a>
+                            <span>더 앰플 플러스 30ml</span>
+                            <strong>25,900원</strong>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/product_05.jpg" alt="뷰티 트리트먼트 오일 30ml 12,900원"></a>
+                            <span>뷰티 트리트먼트 오일 30ml</span>
+                            <strong>12,900원</strong>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/product_06.jpg" alt="이솔 퀵 원스텝 클렌저 200ml"></a>
+                            <span>이솔 퀵 원스텝 클렌저 200ml</span>
+                            <strong>9,900원</strong>
+                        </li>
+                    </ul>
+                    </div>
+                    <ul class="menuArrow">
+                        <li class="leftArrow"><a href="#"><img src="images/arrow_left.gif" alt="왼쪽 화살표"></a></li>
+                        <li class="rightArrow"><a href="#"><img src="images/arrow_right.gif" alt="오른쪽 화살표"></a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="product2 center clearFix">
+                <h4 class="blind">리뷰이벤트, 제품소개</h4>
+                <div class="reviewEvent">
+                    <strong class="text">후기작성 이벤트</strong>
+                    <span class="text">참여하고 이솔제품 선물 받자!</span>
+                    <div class="more"><a href="#">참여하기</a></div>
+                </div>
+                <div class="right">
+                    <div class="productT">
+                        <a href="#">
+                            <img src="images/p_01.png" alt="에이지 슈프림 앰플">
+                            <span class="en">age supreme ampoule</span>
+                            <strong class="title">에이지 슈프림 앰플</strong>
+                            <span class="tag">#내 피부에 다림질</span>
+                            <span class="tag">#고농도 펩타이드의 강력효과</span>
+                        </a>
+
+                    </div>
+                    <div class="productB">
+                        <ul>
+                            <li class="leftPb">
+                                <a href="#">
+                                    <strong>퍼펙트 시카 트리트먼트</strong>
+                                    <span class="left">#겨울 건조함 방어템</span>
+                                    <span class="left">#속보습 일대장</span>
+                                    <img src="images/p_03.png" alt="퍼펙트 시카 트리트먼트">
+                                </a>
+                            </li>
+                            <li class="rightPb">
+                                <a href="#">
+                                    <strong>파워 리피드 트리플 빌드</strong>
+                                    <span class="right">#이중기능스페셜케어</span>
+                                    <span class="right">#장벽강화 특화템</span>
+                                    <img src="images/p_02.png" alt="파워 리피드 트리플 빌드"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="bestReview clearFix">
+                <div class="center">
+                    <h4 class="title"><img src="images/bestReview_title.png" alt="best review"></h4>
+                    <div class="no1">
+                        <a href="#"><img src="images/product_01_01.png" alt="시카 유스 토너"></a>
+                        <strong>No.1</strong>
+                        <span>시카 유스 토너 <br>300ml</span>
+                        <span class="mo_br">시카 유스 토너 300ml</span>
+                        <p class="more"><a href="#">리뷰보러가기</a></p>
+                    </div>
+                    <div class="no2">
+                        <a href="#"><img src="images/product_01_02.png" alt="비타 부스터 C파우더"></a>
+                        <strong>No.2</strong>
+                        <span>비타 부스터 <br>C파우더 <br>15g</span>
+                        <span class="mo_br">비타 부스터 C파우더 15g</span>
+                        <p class="more"><a href="#">리뷰보러가기</a></p>
+                    </div>
+                    <div class="no3">
+                        <a href="#"><img src="images/product_01_03.png" alt="엘릭시르 프로폴리스세럼"></a>
+                        <strong>No.3</strong>
+                        <span>엘릭시르 <br>프로폴리스세럼 <br>50ml</span>
+                        <span class="mo_br">엘릭시르 프로폴리스세럼 50ml</span>
+                        <p class="more"><a href="#">리뷰보러가기</a></p>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </section>
+    <footer>
+        <div id="footTop">
+            <div class="center">
+                <ul class="footMenu">
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">서비스이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">영상정보처리방침</a></li>
+                    <li><a href="#">사이트맵</a></li>
+                </ul>
+                <p class="more"><a href="#">+</a></p>
+            </div>
+        </div>
+        <div id="footBottom">
+            <div class="center">
+                <div class="footT clearFix">
+                    <ul class="call">
+                        <li><span class="text">교환&middot;환불문의</span><span class="text">배송&middot;입금문의</span></li>
+                        <li><span class="number">070-7773-9224</span><span class="number">070-7763-9224</span></li>
+                        <li><span class="time">평일10:00 - 18:00(점심 12:00-13:00)</span></li>
+                    </ul>
+                    <ul class="iconMenu">
+                        <li><a href="#"><i class="icon-placeholder"></i>매장안내</a></li>
+                        <li><a href="#"><i class="icon-gift"></i>멤버십혜택</a></li>
+                        <li><a href="#"><i class="icon-folder"></i>FAQ</a></li>
+                        <li><a href="#"><i class="icon-chat"></i>1:1문의</a></li>
+                    </ul>
+                </div>
+                <div class="footB clearFix">
+                    <address>
+                        <p>(주)이솔(2SOL)</p>
+                        <p><span>대표이사:황성진</span><span>주소:전라북도 완주군 용진읍 구억명덕로 95-5</span><span>사업자 등록번호:401-86-056556</span></p>
+                        <p><span>통신판매업신고번호:2014-전북완주-0027호</span>전화:070-7773-9224</p>
+                        <p>Copyright 주식회사 이솔(2SOL) All Rights Reserved.</p>
+                    </address>
+                    <span class="businessInfo right"><a href="#">사업자 정보확인&gt;</a></span>
+                    <div class="businessInfo left">
+                        <strong>(주)이니시스 구매안전서비스</strong>
+                        <p>고객님의 안전거래를 위해 현금 거래에 대해 이니페이<br>
+                            에스크로서비스를 이용하실 수 있습니다.</p>
+                        <a href="#">서비스 가입사실 확인&gt;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

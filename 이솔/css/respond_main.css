@@ -1,0 +1,253 @@
+@media screen and (max-width:767px){
+    
+    /* 1. 제거하기 */
+    
+    .bestReview .more>a,
+    .bestReview span{
+        display:none;
+    }
+
+/* 2. 100% 만들기 */
+    
+    .bestReview,
+    .weeklySeller{
+        width:100%;
+    }
+    
+    .reviewEvent{
+        min-width:320px;
+    }
+    
+    /* visual */
+    #visual{
+        height:61vw;
+    }
+    #visual label{
+        bottom:-20px;
+    }
+    .banner>li>a{
+        background-size:150%;
+    }
+    
+/* contents product2 */
+    .weeklyWrap{
+        height:auto;
+    }
+    .weeklySeller .product1{
+        width:600%;
+        margin:0;
+        padding:0;
+    }
+    .weeklySeller .product1>li{
+        width:8.333%;
+        height:auto;
+        margin:0;
+    }
+    .weeklySeller .product1>li img{
+        width:100%;
+    }
+    .weeklySeller .product1 span,
+    .weeklySeller .product1 strong{
+        white-space:nowrap;
+    }
+
+    .weeklySeller .title,
+    .bestReview .title{
+        margin:0;
+        padding:30px 0;
+        
+    }
+    .weeklySeller .product1 strong,
+    .weeklySeller .product1 span{
+        font-size:11px;
+        white-space:nowrap;
+        overflow:hidden;
+        text-overflow:ellipsis;
+    }
+    .weeklySeller .product1 > li{
+        height:auto;
+        padding:0 0 25px 0;
+    }
+    .menuArrow{
+        position:absolute;
+        top:40px;
+        width:100%;
+    }
+    .leftArrow{
+        left:10vw;
+        margin:0;
+    }
+    .rightArrow{
+        position:absolute;
+        right:10vw;
+/*        margin-left:150px;*/
+    }
+    
+    .reviewEvent{
+        width:100vw;
+        padding:0;
+        height:50vw;
+        background-position:center center;
+        background-size:cover;
+        float:none;
+        display:table-cell;
+        vertical-align: middle;
+    }
+    .reviewEvent strong{
+        padding:0;
+    }
+    .right{
+/*        display: none;*/
+        float:none;
+        position:relative;
+    }
+    .right > .productT{
+        float:none;
+        position:static;
+        display:table-cell;
+        margin-top:10px;
+        width:100vw;
+    }
+    .productT img{
+        left:15vw;
+    }
+    .productB span:nth-of-type(2){
+        left:30vw;
+    }
+    .productB{
+        float:none;
+        position:static;
+         width:100%;
+    }
+    .productB img{
+        width:13vw;
+    }
+    .productB .leftPb img{
+        width:11vw;
+    }
+    .productB ul>li{
+         width:50%;
+        height:50vw;
+    }
+    .productB:before{
+        left:50%;
+        top:73.5%;
+        margin-left:-51px;
+    }
+    .productB:after{
+/*        display: none;*/
+        left:50%;
+        top:67%;
+        margin-left:-11px;
+    }
+    .bestReview{
+        width:100%;
+/*        height:90vw;*/
+/*        min-height:320px;*/
+/*        max-height:400px;*/
+        margin:30px 0;
+        padding-bottom:20px;
+    }
+    .bestReview .center>div{
+        width:33.33333333333333%;
+        margin: 0;
+        text-align: center;
+    }
+    .bestReview strong{
+        margin: 0;
+        position: absolute;
+        top:-40px;
+        width:100%;
+        font-size:25px;
+    }
+    .bestReview div>a>img {
+        position: static;
+        max-width:110px;
+        width:60%;
+        min-width:95px;
+    }
+    .bestReview span{
+        margin:0;
+        padding-top:15px;
+    }
+    .bestReview .mo_br{
+        display:block;
+        position:static;
+/*        top:80%;*/
+    }
+    .bestReview .no1>span{
+    margin-top:0;
+}
+    
+}
+@media screen and (max-width:600px){
+    .productB span{
+        font-size:13px;
+        left:5vw;
+    }
+}
+@media screen and (max-width:507px){
+    .reviewEvent strong{
+/*    font-size:35px;*/
+    }
+    .reviewEvent>.text{
+        font-size:5vw;
+    }
+    .reviewEvent a{
+        width:5vw;
+        font-size:5vw;
+    }
+    .productT .en{
+        font-size:14px;
+    }
+    .productT .title{
+        font-size:18px;
+    }
+    .productT .tag{
+        font-size:13px;
+    }
+    .iconMenu i{
+        font-size:25px;
+    }
+    .productB strong{
+        padding-top:10px;
+        font-size:14px;
+    }
+    .productB span{
+        font-size:11px;
+        left:5vw;
+    }
+    .productB span:nth-of-type(2){
+        left:28vw;
+    }
+    .productB:before,
+    .productB:after{
+        display:none;
+    }
+
+}
+@media screen and (max-width:430px){
+    .productB img{
+        margin-top:5px;
+    }
+    .productB span{
+        display:block;
+        left:13vw;
+    }
+    .productB span:nth-of-type(2){
+        bottom:2px;
+        left:16vw;
+    }
+}
+@media screen and (max-width:350px){
+    .productB span{
+        display:block;
+        left:10vw;
+        bottom:12px;
+    }
+    .productB span:nth-of-type(2){
+        bottom:2px;
+        left:13vw;
+        bottom:1px;
+    }
+}

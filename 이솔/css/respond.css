@@ -1,0 +1,202 @@
+/* mobile css */
+@media screen and (max-width:767px){
+/* 1. 제거하기 */
+    .gnbLeft,
+    .gnbRight,
+    #footBottom .call,
+    .footB .businessInfo,
+    #footTop .more>a{
+        display:none;
+    }
+    header{
+        background:none;    
+/*        position: fixed;*/
+        top:0;
+        right:0;
+        z-index: 100000;
+    }
+    nav{
+        position:fixed;
+        top:0;
+        right:-70%;
+        margin:0;
+        padding:0;
+        background: #fff;
+        width:70%;
+        height:100%;
+        z-index:20000;
+    }
+    #nav>li:hover .sub{
+        display:block;
+    } 
+    nav:hover .sub,
+    nav:hover:after{
+        display:none;
+    }
+    #nav{
+        margin:0;
+        padding:0;
+    }
+    #nav > li:first-child{
+        margin:0;
+    }
+    #nav>li{
+        float:none;
+        width:100%;
+        height:auto;
+        line-height: 60px;
+/* li 높이랑 글자크기 확대하고싶은데 할 수 없음*/
+    }
+    #nav>li>a{
+        color:#444;
+        font-weight: bold;
+        font-size:25px;
+    }
+    .sub{
+        position:static;
+        width:100%;
+        height:auto;
+        box-sizing: border-box;
+        line-height:30px;
+/*        background:red;*/
+    }
+    .sub li>a:hover{
+        color:#000;
+    }
+    .sub li>a{
+        font-size:18px;
+    }
+    .mo_login{
+        display:block;
+        position:fixed;
+        bottom:0;
+        right:-70%;
+        width:70%;
+        height:60px;
+        z-index:100001;
+        background:#ddd;
+        font-family: "Nanum Myeongjo", sans-serif;
+        font-size:25px;
+        text-align: center;
+        line-height: 65px;
+    }
+    .mo_login a{
+        color:#000;
+        font-weight: bold;
+    }
+    .mo_login img{
+        width:20px;
+        height:20px;
+        margin:-6px 10px 0 0;
+    }
+    .mo_call{
+        display:block;
+    }
+    .mo_call a{
+        display:block;
+        font-size:20px;
+        width:216;
+        height:70px;
+        border-bottom:1px solid #444;
+        text-align: center;
+        padding-top:10px;
+        box-sizing: border-box;
+        line-height: 1.5;
+    }
+    .mo_call span{
+         display:block;
+        font-size:15px;
+        text-align: center;
+        padding-top:10px;
+    }
+
+/* 2. 100% 만들기 */
+    .center{
+        width:100%;
+    }
+    header,
+    #visual,
+    footer{
+        min-width:100%;
+    }
+    
+/* 3. hamBtn 보이기 */
+    .hamBtn{
+        display:block;
+        position:absolute;
+        top:20px;
+        right:20px;
+    }
+    .mo_search,
+    .mo_cart{
+        display:block;
+        width:5vw;
+        height:5vw;
+    }
+/* mo header */
+    header{
+        width:100%;
+        max-height:70px;
+        height:20vw;
+    }
+    .logo{
+        float:none;
+        text-align: center;
+        margin:0;
+        padding:25px 0 0;
+    }
+    .logo img{
+        min-width:150px;
+        width:60vw;
+        max-width:190px;
+    }
+
+/* footer */
+     #footTop{
+        height:95px;
+    }
+    #footTop .center{
+        padding:0;
+    }
+    #footTop .footMenu > li {
+    float: none;
+    padding: 0;
+    margin:0;
+        line-height:1.5;
+        border-bottom:1px solid #aaa9a9;
+        text-indent: 15px;
+    }
+    #footTop .footMenu>li:last-child{
+        border:none;
+    }
+    .footMenu>li:after{
+        display:none;
+    }
+    #footTop .footMenu>li>a{
+        color:#aaa9a9
+    }
+    .iconMenu{
+        width:100%;
+    }
+    .iconMenu>li{
+        margin: 0;
+        width:25%;
+    }
+    #footTop{}
+    .footT,
+    .footB{
+        margin:0;
+    }
+    .footB:before{
+        width:100%;
+    }
+    address{
+        padding:10px 15px;
+        font-size:11px;
+    }
+    address span{
+        padding-right:10px;
+        display: inline-block;
+        word-break: keep-all;
+    }
+}

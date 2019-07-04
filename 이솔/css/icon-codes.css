@@ -1,0 +1,5 @@
+
+.icon-chat:before { content: '\e800'; } /* '' */
+.icon-folder:before { content: '\e801'; } /* '' */
+.icon-gift:before { content: '\e802'; } /* '' */
+.icon-placeholder:before { content: '\e803'; } /* '' */

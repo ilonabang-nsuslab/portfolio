@@ -1,0 +1,192 @@
+@media screen and (max-width:767px){
+/* 1. 제거하기 */
+  
+    .banner>span:last-of-type,
+    .bsText img,
+    .dsText img:last-of-type,
+    .dsText img:first-of-type,
+    .dsText .mo_dsTextBt,
+    .isText .mo_isTextBt{
+        display:none;
+    }
+    
+
+    header{
+        background:#fff !important;
+    }
+    
+/* 2. 100% 만들기 */
+    
+    .banner,
+    .brandType,
+    .dsText{
+        width:100%;
+    }
+ 
+/* container */
+    
+/* banner1 */
+    .banner{
+        height:70vw;
+        min-height:390px;
+    }
+    .bannerBg{
+        height:70vw;
+        min-height: 450px;
+    }
+    .banner>span:first-of-type{
+        display: block;
+        width:177px;
+        height:62px;
+        bottom:60%;
+    }
+    .mo_text{
+        display:block;
+        width:203px;
+        height:46px;
+        font-size:20px; 
+        bottom: 40%;
+        margin-left:-10px;
+        text-align: center;
+    }
+    .scroll{
+        bottom:10vw;
+    }
+    
+/* brandStory */
+    .brandStory{
+        margin:0 0 50px;
+    }
+    .bsText{
+        margin:0;
+        padding:40px 10px;
+    }
+/* brandType */
+    .brandType .text span{
+        width:320px;
+        height:35px;
+        text-align: center;
+    }
+    .brandType .text span:nth-of-type(2){
+        font-size:20px;
+    }
+    .button>li{
+        float:none;
+        background-image: url(../images/bannerBtn01_mo.png);
+        left:50%;
+        transform: translateX(-50%);
+    }
+    .button>li:first-child{
+        margin:0;
+        top:60%;
+    }
+    .button>li:last-child{
+        margin:10px 0 0;
+        top:75%;
+    }
+    .isText img:first-of-type{
+        display: none;
+    }
+    .isText .boldText span{
+        margin-left: 100px;
+    }
+    .isText img:last-of-type{
+        opacity: 0;
+    }
+/* banner 3 */
+    .banner2{
+        background-size: 100%;
+        height:300px;
+    }
+/* dunaStory */
+    .dunaStory .title{
+/*        color:#fff;*/
+    }
+    .dunaStory>img{
+        opacity: 0.3;
+    }
+    .dunaStory .normalText{
+        color:#000;
+    }
+    .dsText .title:after{
+        margin-left:45%;
+    }
+
+    
+}
+@media screen and (max-width:530px){
+    .button>li{
+        width:300px;
+        height:63px;
+    }
+    .isText img:last-of-type{
+        margin:0;
+        position: absolute;
+        top:40%;
+        left:20%;
+    }
+    .isText .boldText,
+    .dsText .boldText{
+        display:none;
+    }
+    .dsText .mo_dsTextBt,
+    .isText .mo_isTextBt{
+        display: block;
+        font-size:15px;
+        font-weight: bold;
+    }
+    .dsText .mo_dsTextBt span:last-of-type,
+    .isText .mo_isTextBt span:last-of-type{
+        margin-bottom: 50px;
+    }
+    
+    /* isolStory*/
+    
+    .isText .mo_isTextBt{
+        display:block;
+    }
+    .isText .mo_isTextBt span{
+        display: block;
+        line-height: 1.8;
+    }
+    .isText .normalText{
+        display: none;
+    }
+    .mo_isTextBt span:first-of-type{
+        margin-top:70px;
+    }
+    
+    .mo_isText{
+        display: block;
+        font-size:13px;
+    }
+    .mo_isText span{
+        display: block;
+        margin-bottom: 10px;
+        text-align: right;
+        line-height: 1.5;
+    }
+
+/* dunaStory */
+    
+    .dsText .mo_dsTextBt span{
+        display: block;
+        margin-bottom:7px;
+    }
+    
+    .dsText .normalText{
+        display:none;
+    }
+    .mo_dsText{
+        display:block;
+        font-size:13px;
+        padding:0 8px;
+        line-height: 1.5;
+        color: #000;
+    }
+    .mo_dsText span{
+        display:block;
+        margin-bottom: 10px;
+    }
+    
+}

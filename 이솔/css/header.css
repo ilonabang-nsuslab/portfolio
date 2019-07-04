@@ -1,0 +1,225 @@
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+.center {
+    width: 1260px;
+    margin: 0 auto;
+    position: relative;
+/*    background: rgba(255, 0, 0, 0.2);*/
+}
+
+/* header */
+
+header {
+    background: url(../images/header_bg.jpg) no-repeat #222;
+    width: 100%;
+    min-width: 1260px;
+    max-width: 1920px;
+    height: 124px;
+    position: relative;
+}
+.hamBtn,
+.mo_login,
+.mo_call,
+.navClose{
+    display:none;
+}
+.hamBtn{
+    z-index:10001;
+}
+.hamBtn a{
+    display: block;
+    width:15px;
+    height:15px;
+    border:1px solid #000;
+    padding:6px;
+/*    background:red;*/
+}
+.hamBtn img{
+    width:100%;
+}
+.bestReview .mo_br{
+    display:none;
+}
+.mo_cart,
+.mo_search{
+    display:none;
+    position:absolute;
+}
+.mo_cart{
+    top:25px;
+    left:4vw;
+    max-width:25px;
+    height:25px;
+}
+.mo_search{
+    top:25px;
+    left:11vw;
+    max-width:23px;
+    height:23px;
+}
+.mo_cart img{
+    width:100%;
+}
+.mo_search img{
+ width:100%;
+}
+
+.logo {
+    /* logo를 띄울 때 반응형 호환을 위해 position을 쓰지않고 float을 사용 */
+    float: left;
+    margin-top: 90px;
+    /* z-index를 적용할 때는 position을 꼭 주어야 적용됨 */
+    position: relative;
+    z-index: 10000;
+    padding-right: 150px;
+}
+
+header .gnb {
+    float: right;
+    /*        background:pink;*/
+}
+
+.gnbLeft {
+    float: left;
+    /*        background:green;*/
+}
+
+header .gnbLeft > li {
+    float: left;
+    padding: 25px 10px 0 13px;
+    position: relative;
+}
+
+.gnbLeft > li > a {
+    color: #aaa9a9;
+    font-family: 'NanumSquare';
+}
+
+.gnbLeft > li:before {
+    content: "";
+    display: block;
+    clear: both;
+    width: 1px;
+    height: 10px;
+    background: #aaa9a9;
+    position: absolute;
+    top: 26px;
+    left: 0px;
+}
+
+.gnbLeft > li:first-child:before {
+    display: none;
+}
+
+.gnbRight {
+    float: right;
+    margin-top: 23px;
+}
+
+.search {
+    height: 15px;
+}
+
+.search input {
+    width: 100px;
+    height: 15px;
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid #706d6c;
+}
+
+.gnbRight img {
+    display: block;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 26px;
+    right: 4px;
+    color: #fff;
+    font-weight: 100;
+}
+
+nav {
+    /* sub을 hover했을 때 100%로 적용할 경우 부모인 nav(class이름을 따로 주는게 덜 헷갈림 ex. navWrap)에 너비값을 지정해주어야 부모의 크기에 맞게 자식이 맞춰서 들어갈 수 있으므로 부모에게도 width:100%을 줌 ***nav의 마크업이 center밖에 있는지 확인 */
+    position: absolute;
+    top: 80px;
+/*    left: 0;*/
+    width: 100%;
+    height: 45px;
+}
+
+#nav > li {
+    float: left;
+    /* nav의 li 하나마다 너비값을 주는 것은 각각의 .sub 너비값과 동일하므로 맞춰주기 위해 적용 */
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+#nav > li:first-child {
+    margin-left: 350px;
+}
+
+#nav > li > a {
+    display:block;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #aaa9a9;
+}
+#nav>li:hover{
+    color:#fff;
+    transition:0.5s;
+    border-bottom:3px solid #fff;
+}
+
+.sub {
+    display: none;
+    /* .sub>li>a의 width은 .sub의 width값과 동일 */
+    width: 150px;
+    height: 200px;
+    /*    background:red;*/
+    position: absolute;
+    top: 46px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.sub li {}
+
+.sub li > a {
+    display: block;
+    color: #989696;
+}
+
+nav:hover .sub {
+    display: block;
+}
+
+nav:hover:after {
+    content: "";
+    display: block;
+    clear: both;
+    /* 너비값을 100%를 주고 */
+    width: 100%;
+    min-width: 1260px;
+    max-width: 1920px;
+    height: 200px;
+    background: rgba(59, 59, 59, 0.9);
+    position: absolute;
+    top: 44px;
+    z-index: 99;
+}
+
+.sub a:hover {
+    color: #fff;
+}
+
+.navClose{
+    display: none;
+    width:100%;
+    height:100%;
+    position: fixed;
+    top:0;
+    background-color:rgba(0,0,0,.5);
+}

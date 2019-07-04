@@ -1,0 +1,126 @@
+@media screen and (max-width:767px){
+/* 1. 제거하기 */
+    
+    .routeWrap,
+    .menuWrap,
+    .membershipLevel,
+    .caution{
+        display:none;
+    }
+
+/* 2. 100% 만들기 */
+
+    .centerWrap{
+        width:100%;
+    }
+ 
+/* container */
+    .centerWrap{
+        padding:0;
+    }
+    .title,
+    .title strong:after,
+    .title span{
+        display: none;
+    }
+    .logTitle{
+/*        width:53vw;*/
+    }
+    .login{
+        padding-top:30px;
+        margin:0 auto;
+        height:320px;
+        width:380px;
+    }
+    .login p{
+        left:290px;
+    }
+    .login>li{
+        float:none;
+    }
+    .nmbrLogin{
+        margin-top
+    }
+    .nmbrLogin .logTitle{
+/*        padding-top:25px;*/
+    }
+    .afterLogin{
+        padding:0;
+        padding:30px 0;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width:430px){
+    .afterLogin{
+        width:80vw;
+/*        padding:50px 0;*/
+        margin-top:50px;
+    }
+    .snsLogin>li{
+        width:100%;
+        height:auto;
+    }
+    .login{
+        height:400px;
+        width:90vw;
+        margin: 0 auto;
+    }
+    .logTitle,
+    .nmbrLogin .logTitle{
+        width:100%;
+    }
+    .nmbrLogin{
+        margin-top: 30px;
+    }
+    .login>li:first-child{
+        margin:0;
+    }
+    .login form{
+        padding-top:20px;
+    }
+    .login p{
+        position: static;
+        width:90vw;
+        height:35px;
+        line-height: 35px;
+        border-radius: 0;
+        margin-top:15px;
+        background: #222;
+        color:#fff;
+    }
+    .login p>a{
+        color:#fff;
+    }
+    .login form{
+        width:85vw;
+        margin: 0 auto;
+    }
+    .login label{
+        width:40%;
+
+    }
+    .login input{
+        width:60%;
+
+    }
+    .menuLogin{
+        width:60vw;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .menuLogin span:last-of-type{
+        margin-top:10px;
+    }
+    .menuLogin>li:first-child strong{
+        margin-left:0;
+    }
+    .menuLogin strong{
+        display: block;
+        margin-left:0;
+        margin-top:10px;
+        cursor:pointer;
+        text-align: center;
+        width:100%;
+
+    }
+}
