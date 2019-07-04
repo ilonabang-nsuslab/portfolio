@@ -243,12 +243,11 @@ body {
 }
 
 .productB .leftPb>a{
-    background-color:#acb9a5;
-/*    margin-right: 308px;*/
+    background-color:firebrick;
 }
 
 .productB .rightPb>a{
-    background: url(../images/duo_cover_02.jpg);
+    background-color: darksalmon;
 }
 .productB .leftPb>a:hover:after,
 .productB .rightPb>a:hover:after{
