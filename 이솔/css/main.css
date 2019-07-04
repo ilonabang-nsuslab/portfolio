@@ -247,7 +247,7 @@ body {
 }
 
 .productB .rightPb>a{
-    background-color: green;
+    background-color: salmon;
 }
 .productB .leftPb>a:hover:after,
 .productB .rightPb>a:hover:after{
